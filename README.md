@@ -26,7 +26,7 @@ The `model` folder contains pretrained models used in different experiments.
 - **3_model_yaw_0-120.pth**
   Model used for the **orientation generalization experiment** in **Section 5.4.2**.
 - **4_ablation_plain.pth**
-  Plain baseline model used in the **ablation study ** (Appendix A).
+  Plain baseline model used in the **ablation study** (Appendix A).
 - **5_ablation_wo_sign-inv.pth**
   Model trained **without the sign-invariant cosine loss** (Appendix A).
 - **6_ablation_wo_tv.pth**
@@ -52,7 +52,6 @@ This folder also includes occlusion variants used in **Section 5.5**:
 - `pcd_cutout_20_20`
 - `pcd_cutout_30_30`
 
-------
 
 ### Randomized plantation orientation dataset
 
@@ -62,7 +61,6 @@ val_data/val_0_180
 
 Used in **Section 5.4.1 (Randomized Plantation Orientation)**.
 
-------
 
 ### Orientation generalization datasets
 
@@ -112,3 +110,4 @@ ckpt_path
 - **Pixel MAE / Pixel Acc** correspond to results using histogram aggregation.
 - **Frame Err / Frame Acc** correspond to results without histogram aggregation.
 - The loss function used during training does **not affect the testing results**, since evaluation relies only on model predictions.
+
