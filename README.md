@@ -1,6 +1,6 @@
 # Forest Row Orientation Estimation
 
-This repository provides the code, pretrained models, and evaluation datasets for the paper:
+This repository provides the code, trained models, and evaluation datasets for the paper:
 
 **A Learning-based Approach for Forest Row Orientation Estimation from UAV LiDAR Point Clouds (Under Review)**
 
@@ -10,14 +10,14 @@ The repository includes:
 
 - training code (`train.py`)
 - testing scripts for the experiments in the paper (`test1.py`, `test2.py`, `test3.py`)
-- pretrained models (`model/`)
+- trained models (`model/`)
 - validation datasets (`val_data/`)
 
 ------
 
 # Model Files
 
-The `model` folder contains pretrained models used in different experiments.
+The `model` folder contains trained models used in different experiments.
 
 - **1_model_main.pth**
   BEV-U-Net model used in the main experiments (Section 5.2, Section 5.5 and Appendix A).
@@ -110,4 +110,5 @@ ckpt_path
 - **Pixel MAE / Pixel Acc** correspond to results using histogram aggregation.
 - **Frame Err / Frame Acc** correspond to results without histogram aggregation.
 - The loss function used during training does **not affect the testing results**, since evaluation relies only on model predictions.
+
 
